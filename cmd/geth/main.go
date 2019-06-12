@@ -284,6 +284,8 @@ func init() {
 }
 
 func main() {
+	fmt.Print("\nIn main..\n")
+	time.Sleep(20 * time.Second)
 	if err := app.Run(os.Args); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
